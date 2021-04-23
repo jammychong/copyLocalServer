@@ -5,7 +5,7 @@ Scripts registers commands to be accessible in the file right-click menu option 
 
 Download the repository to a permanent place in your C: drive, follow the installation process below or follow the copyLocalServer_instruction.pdf.
 
-# Instructions
+# Details
 
 The copy to local/server will create the folder path and copy your file to the corresponding destination, it will not copy the file if it exists in order to prevent an unwanted overwrite, it will create a txt file in your current folder with the prefix “exists”. To overwrite the file use copy/overwrite to local/server, it will delete the text file created by the copy to local/server if it exists.
 
