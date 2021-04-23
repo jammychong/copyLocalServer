@@ -1,6 +1,7 @@
 import sys
 import os
 import shutil
+import time
 
 _file = sys.argv[1]
 directory = os.path.dirname(_file)
@@ -11,6 +12,7 @@ def write_temp_txt(_file, suffix, message):
     temp_file += "{}.txt".format(suffix)
     with open(temp_file, 'w') as f:
         f.write("{0} {1}".format(temp_file, message))
+    return temp_file
 
 
 def copy_to_server(_file, server_directory, server_file):
@@ -24,7 +26,10 @@ def copy_to_server(_file, server_directory, server_file):
         write_temp_txt(_file, "_exists", "already exists, use copy/overwrite instead")
     else:
         try:
+            copy_txt = write_temp_txt(_file, "_copying", "Copying file")
+            time.sleep(0.5)
             shutil.copy(_file, server_file)
+            os.remove(copy_txt)
         except:
             pass
 
