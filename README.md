@@ -14,10 +14,12 @@ Since the scripts do not access the file explorer’s dialog messages neither pr
 # Installation
 
 1.  Make sure you have python 3 install in your computer. To check if python is installed go to the command prompt and type “where python”, you’ll get a path if python is installed in your computer. Otherwise download and install the latest python here: https://www.python.org/downloads/.
-3.	Download the copyLocalServer repository in a permanent place in your C drive.
-4.	Open the settings.txt file and replace the local and server drives with your own (line 2 and 3, lower case sensitive), do not delete the first line with instructions.
+2.	Download the copyLocalServer repository in a permanent place in your C drive.
+3.	Open the settings.txt file and replace the local and server drives with your own (line 2 and 3, lower case sensitive), do not delete the first line with instructions.
+
           Ex: 	local_drive=S:\Server
-          server_drive=\\NetworkDrive
+                    server_drive=\\NetworkDrive
+                    
 4.	Right-Click the install.bat file and run as administrator.
 5.	Go to explorer, right-click a file and you should see the copy options.
 
