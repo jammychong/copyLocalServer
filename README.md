@@ -17,8 +17,8 @@ Since the scripts do not access the file explorer’s dialog messages neither pr
 2.	Download the copyLocalServer repository in a permanent place in your C drive.
 3.	Open the settings.txt file and replace the local and server drives with your own (line 2 and 3, lower case sensitive), do not delete the first line with instructions.
 
-          Ex: 	local_drive=S:\Server
-                    server_drive=\\NetworkDrive
+          Ex:    local_drive=S:\Server
+                 server_drive=\\NetworkDrive
                     
 4.	Right-Click the install.bat file and run as administrator.
 5.	Go to explorer, right-click a file and you should see the copy options.
