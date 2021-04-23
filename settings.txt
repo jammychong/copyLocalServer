@@ -1,0 +1,3 @@
+Set your local and server paths, paths are case sensitive so make sure you get the correct path. Do not delete this line
+local_drive=S:\Gun3
+server_drive=\\gun3
