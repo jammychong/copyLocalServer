@@ -7,7 +7,7 @@ Download the repository to a permanent place in your C: drive, follow the instal
 
 # Details
 
-The copy to local/server will create the folder path and copy your file to the corresponding destination, it will not copy the file if it exists in order to prevent an unwanted overwrite, it will create a txt file in your current folder with the prefix “exists”. To overwrite the file use copy/overwrite to local/server, it will delete the text file created by the copy to local/server if it exists.
+The copy to local/server will create the folder path and copy your file to the corresponding destination, it will not copy the file if it exists in order to prevent an unwanted overwrite, it will create a txt file in your current folder with the prefix “exists”. To overwrite the file use copy/overwrite to local/server, it will delete the text file created by the copy to local/server if it exists. Copying folders will overwrite all existing documents in the folder, use it with caution.
 
 Since the scripts do not access the file explorer’s dialog messages neither progress bar, the script will communicate statuses and errors through a series of text files in the current folder. 
 
@@ -23,10 +23,19 @@ Since the scripts do not access the file explorer’s dialog messages neither pr
 4.	Right-Click the install.bat file and run as administrator.
 5.	Go to explorer, right-click a file and you should see the copy options.
 
+# Optional Installation
+1.	If the install was unsuccessful, run Command Prompt as Administrator.
+2.	In Command Prompt, go inside the copyLocalServer folder where you copied it and run "python scripts/make_keys.py"
+3.	Go to explorer, right-click a file and you should see the copy options.
+
 # Uninstall
 
 1.  Right-Click the uninstall.bat file and run as administrator.
 2.  That's it!
+
+# Optional Installation
+1.	If the uninstall was unsuccessful, run Command Prompt as Administrator.
+2.	In Command Prompt, go inside the copyLocalServer folder where you copied it and run "python scripts/remove_keys.py"
 
 # Notes
 
